@@ -6,7 +6,7 @@
 
 | 템플릿 | 사용할 질문 |
 | --- | --- |
-| [컨벤션](../templates/convention.template.md) | 이름 짓기·소스·시험·서식 규칙과 준수 확인 |
+| [컨벤션](../templates/convention.template.md) | 이름 짓기·소스·테스트·서식 규칙과 준수 확인 |
 | [디자인 시스템](../templates/DESIGN.template.md) | 공통 토큰·시각 원칙·컴포넌트 스타일과 예외 |
 | [프런트엔드 컨벤션](../templates/frontend.template.md) | 디자인 기준의 코드 적용·재사용·미리보기와 검증 |
 
@@ -21,6 +21,20 @@
 3. 공식 코딩 관례
 4. 프로젝트 컨벤션
 5. 개별 패키지 컨벤션
+
+## 이름 짓기 기본 규칙
+
+이 절은 소스 코드의 파일·클래스 이름에 적용한다. 프로젝트의 이름 목록은 프로젝트의 이름 짓기 컨벤션에 둔다.
+
+- 같은 업무 도메인의 이름은 같은 prefix로 시작하기를 권장한다. prefix는 [용어집](../AGENTS.md#용어집)에 적힌 업무 용어의 코드 영어 이름을 쓴다.
+- 유형은 suffix로 나타내야 한다. suffix는 프로젝트의 suffix 목록에서 고른다. suffix 목록에는 suffix마다 쓰이는 레이어와 역할을 적는다.
+- 기존 suffix로 표현할 수 없을 때만 새 suffix를 추가한다. 추가 이유를 suffix 목록에 기록해야 한다.
+- 이름은 5단어 이상으로 짓지 않기를 권장한다.
+
+```text
+좋음: OrderPaymentService (도메인 prefix Order + 대상 Payment + 유형 Service, 3단어)
+나쁨: ServiceForHandlingOrderPaymentRequests (6단어, 도메인 prefix로 시작하지 않음)
+```
 
 ## 작성 규칙
 

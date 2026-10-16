@@ -53,7 +53,7 @@
 
 | 단계 | 할 일 | 산출물 | 다음 단계로 넘어갈 기준 |
 | --- | --- | --- | --- |
-| 1. 동작 문서 완료 | PRD와 화면 스펙을 쓴다. 화면 스펙에 화면 ID, 상태, 입력 검증, 수용 시험을 쓴다. | PRD, 화면 스펙 또는 스펙의 화면 절 | 아래 시작 조건을 모두 만족한다. |
+| 1. 동작 문서 완료 | PRD와 화면 스펙을 쓴다. 화면 스펙에 화면 ID, 상태, 입력 검증, 수용 테스트를 쓴다. | PRD, 화면 스펙 또는 스펙의 화면 절 | 아래 시작 조건을 모두 만족한다. |
 | 2. 참고 디자인 수집 | 대상 사용자와 주요 작업에 맞는 참고 디자인을 모은다. | DESIGN.md "디자인 방향"의 참고 자료 | 자료마다 링크, 채택할 요소, 채택하지 않을 요소를 구분했다. |
 | 3. DESIGN.md 확정 | 참고 자료를 근거로 토큰과 컴포넌트 기준을 `Draft`로 쓰고, 사용자의 채택을 받는다. | `docs/conventions/DESIGN.md` | 사용자가 채택했고 DESIGN.md가 `Accepted`이다. |
 | 4. 화면별 HTML 시안 | DESIGN.md가 `Accepted`가 된 뒤, 화면 스펙마다 HTML 시안을 만든다. | 화면 스펙별 HTML 시안 | 모든 화면 ID와 상태가 시안에 있고 사용자가 시안을 채택했다. |
@@ -67,7 +67,7 @@
 
 - PRD가 있고 요구사항 ID가 있다.
 - 화면 스펙 또는 스펙의 화면 절이 있다.
-- 그 문서에 화면 ID, 화면 상태, 입력 검증, 수용 시험이 있다.
+- 그 문서에 화면 ID, 화면 상태, 입력 검증, 수용 테스트가 있다.
 
 조건이 부족하면 [스펙 규칙](../../../../docs/specs/AGENTS.md)에 따라 먼저 쓴다. 시안을 만들려고 상태나 시나리오를 임의로 추가하지 않는다.
 
@@ -160,7 +160,7 @@ DESIGN.md가 `Accepted`가 된 뒤에 시작한다.
 | --- | --- | --- | --- |
 | 디자인 문서·토큰 | {{명세·도구 버전과 프로젝트 경로}} | {{구조·참조·생성 산출물 검사}} | {{오류와 경고별 처리 기준}} |
 | 코드 | {{런타임·프레임워크 버전과 경로}} | {{설정에서 확인한 린트·타입 검사·빌드}} | {{종료 코드와 기대 결과}} |
-| 사용자 동작 | {{시험 환경·데이터와 경로}} | {{단위·통합·E2E 시험}} | {{스펙의 수용 기준}} |
+| 사용자 동작 | {{테스트 환경·데이터와 경로}} | {{단위·통합·E2E 테스트}} | {{스펙의 수용 기준}} |
 | 접근성 | {{기준·도구 버전·브라우저}} | {{자동 검사와 키보드·포커스 수동 확인}} | {{해당 기준의 통과 조건}} |
 | 시각 결과 | {{브라우저·OS·폰트·화면 폭·테마}} | {{실제 컴포넌트 미리보기와 화면별 시안 대조·스크린샷 회귀 검사}} | {{차이 허용 기준과 검토 방법}} |
 | 콘텐츠 경계 | {{스펙에 정의된 데이터 범위}} | {{긴 한글·URL·빈 값·많은 항목 등}} | {{정보와 행동이 유지되는 조건}} |
@@ -179,7 +179,7 @@ DESIGN.md가 `Accepted`가 된 뒤에 시작한다.
 
 ## 7. 검증 증거와 완료 보고
 
-결과와 증거는 [검증 기록 규칙](../../../../docs/AGENTS.md#검증-기록)을 따른다. 화면 동작은 스펙의 수용 시험 표에서, 시각·컨벤션 검사는 검증 how-to에서 관리한다.
+결과와 증거는 [검증 기록 규칙](../../../../docs/AGENTS.md#검증-기록)을 따른다. 화면 동작의 증거는 테스트 메타 정보 기반 커버리지·결과 보고서를 연결한다. 시각·컨벤션 검사는 검증 how-to에서 관리한다.
 
 시각 검토와 컨벤션 검사는 다음 형식으로 별도 기록할 수 있다. 관련 스펙 시나리오가 있으면 함께 연결한다.
 
@@ -210,5 +210,5 @@ DESIGN.md가 `Accepted`가 된 뒤에 시작한다.
 | [Stitch design-md](https://github.com/google-labs-code/stitch-skills/blob/main/plugins/stitch-utilities/skills/design-md/SKILL.md) | Stitch 시안이 있을 때 디자인 기준 초안 추출 |
 | [UI UX Pro Max](https://github.com/nextlevelbuilder/ui-ux-pro-max-skill/blob/main/src/ui-ux-pro-max/templates/base/skill-content.md) | 미정인 디자인 방향의 후보 탐색 |
 | [Vercel web-design-guidelines](https://github.com/vercel-labs/agent-skills/blob/main/skills/web-design-guidelines/SKILL.md) | 구현 후 UI 규칙 검토 |
-| [Storybook](https://storybook.js.org/docs/writing-stories) | 선택 사항. 컴포넌트 예시의 탐색·문서·시험 관리 |
+| [Storybook](https://storybook.js.org/docs/writing-stories) | 선택 사항. 컴포넌트 예시의 탐색·문서·테스트 관리 |
 | [Playwright](https://playwright.dev/docs/test-snapshots) | 스크린샷 회귀 검사 |
