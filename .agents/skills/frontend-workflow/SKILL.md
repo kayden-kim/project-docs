@@ -32,7 +32,7 @@ description: >-
 
 - 화면 동작은 스펙, 시각 기준은 DESIGN.md와 토큰 원본, props와 내부 구조는 모듈 설계를 따른다.
 - 기존 토큰·컴포넌트·변형을 먼저 재사용한다. 새 공통 스타일과 화면별 예외는 [5절](references/frontend-workflow.md#5-공통-기준과-구현)에 따라 반영한다.
-- 기준이 없으면 [컨벤션 작성 규칙](../../../docs/conventions/AGENTS.md)에 따라 필요한 범위만 작성한다.
+- 기준이 없으면 [디자인 문서 작성 규칙](../../../docs/design/AGENTS.md)과 [컨벤션 작성 규칙](../../../docs/conventions/AGENTS.md)에 따라 필요한 범위만 작성한다.
 
 ## 구현과 확인
 
