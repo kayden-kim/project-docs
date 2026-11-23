@@ -65,7 +65,7 @@
 4. 교환 형식: 구성요소 사이에 주고받는 형식이 있으면 [계약](docs/contracts/AGENTS.md)에 쓴다.
 5. 기술 결정: [ADR 작성 조건](docs/decisions/AGENTS.md#작성-규칙)을 모두 만족하는 선택만 ADR로 쓴다.
 6. 화면 디자인: 화면이 있으면 `frontend-workflow` 스킬에 따라 DESIGN.md를 확정하고 화면별 HTML 시안의 채택을 받는다.
-7. 구조: 새 구성요소와 진입점을 계획한다. 코드가 없으면 [코드 지도](docs/architectures/AGENTS.md#작성-규칙)의 `Target` 구조에 쓴다. 코드가 있으면 `Current` 코드 지도에 넣지 않고 [모듈 설계](docs/architectures/AGENTS.md#작성-규칙)에 `Target`으로 쓴다. 코드 지도는 구현 후 3단계 6에서 갱신한다. 새 코드 타입이 필요하면 [도메인 모델](docs/architectures/AGENTS.md#도메인-모델)에 계획한 타입을 쓰고, 구조 시점은 [도메인 설계](#도메인-설계)의 3을 따른다.
+7. 구조: 새 구성요소와 진입점을 계획한다. 코드가 없으면 [코드 지도](docs/architectures/AGENTS.md#작성-규칙)의 `Target` 구조에 쓴다. 코드가 있으면 `Current` 코드 지도에 넣지 않는다. 바뀌는 모듈마다 [모듈 설계](docs/architectures/AGENTS.md#작성-규칙)에 `Target`으로 쓰고, 여러 모듈에 걸친 호출 관계는 관점별 아키텍처 문서에 쓴다. 쓰는 위치는 [아키텍처 작성 규칙](docs/architectures/AGENTS.md#작성-규칙)을 따른다. 코드 지도는 구현 후 3단계 6에서 갱신한다. 새 코드 타입이 필요하면 [도메인 모델](docs/architectures/AGENTS.md#도메인-모델)에 계획한 타입을 쓰고, 구조 시점은 [도메인 설계](#도메인-설계)의 3을 따른다.
 8. 채택: 사용자에게 채택을 받고 문서 상태를 갱신한다. 미결정 사항은 영향 범위와 함께 제시한다.
 
 1~3과 7은 [요구사항 추적](#요구사항-추적)과 [도메인 설계](#도메인-설계)의 연결을 만든다. 두 절의 순서와 연결 방법을 따른다.
