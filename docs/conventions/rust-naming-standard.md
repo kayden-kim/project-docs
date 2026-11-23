@@ -4,8 +4,8 @@
 
 | 항목 | 값 |
 | --- | --- |
-| 상태 | Active (2026-11-24 주인 채택. 두 저장소에는 각 저장소의 컨벤션에 반영한 뒤 적용한다) |
-| 적용 대상 | Rust, `**/*.rs`, `Cargo.toml`의 타입·trait·모듈·파일·crate 이름 (주인의 모든 Rust 프로젝트) |
+| 상태 | Active (2026-11-24 주인 채택) |
+| 적용 대상 | Rust, `**/*.rs`, `Cargo.toml`의 타입·trait·모듈·파일·crate 이름 (주인의 모든 Rust 프로젝트). 이 표준 자체가 적용 중이다. narumq-v2와 vnc-relay의 기존 코드·문서에 반영하는 일은 이 표준의 범위 밖이다([E.2](#e2-범위-밖)) |
 | 기준 버전 | [Rust API Guidelines: Naming](https://rust-lang.github.io/api-guidelines/naming.html), [Clippy 설정 문서](https://raw.githubusercontent.com/rust-lang/rust-clippy/master/book/src/lint_configuration.md)(master, 조사일 2026-11-24), Rust edition 2024(두 저장소 기준) |
 | 관련 아키텍처 문서 | 없음. 조사한 두 저장소의 코드 지도는 narumq-v2 `docs/architectures/project-structure.md`, vnc-relay `docs/architectures/code-map.md`다 |
 | 관련 ADR | 없음 |
@@ -14,7 +14,7 @@
 
 ## 1. 규칙 우선순위
 
-[컨벤션 작성 규칙](AGENTS.md#규칙-우선순위)을 따른다. 이 표준은 4순위(프로젝트 컨벤션)에 속한다. 컴파일러, rustfmt, 공식 관례(Rust API Guidelines)가 정한 것은 바꾸지 않고, 그들이 선택지를 남긴 부분(역할 suffix, 모듈 경로 반복, crate 이름)만 정한다. 각 프로젝트의 컨벤션은 이 표준을 링크하고 프로젝트 고유 항목만 더한다([부록 E](#부록-e-문서-위치-판단과-하지-않은-일)).
+[컨벤션 작성 규칙](AGENTS.md#규칙-우선순위)을 따른다. 이 표준은 4순위(프로젝트 컨벤션)에 속한다. 컴파일러, rustfmt, 공식 관례(Rust API Guidelines)가 정한 것은 바꾸지 않고, 그들이 선택지를 남긴 부분(역할 suffix, 모듈 경로 반복, crate 이름)만 정한다. 각 프로젝트의 컨벤션은 이 표준을 링크하고 프로젝트 고유 항목만 더한다([부록 E](#부록-e-문서-위치와-범위)).
 
 ### 1.1 Rust 관행과 근거
 
@@ -286,7 +286,7 @@ use narumq_domain::session::SessionLifecycleEntity;
 
 ## 6. 기존 코드 마이그레이션
 
-이 표준은 두 저장소의 코드를 바꾸지 않는다. 아래 수는 부록 D에서 채택한 결정(D1(c) D2(c) D3(a) D4(a) D5(a) D6(a) D7(b) D9(a) D10(a))을 두 저장소에 적용할 때 이름이 바뀌는 선언의 대략 개수다. 반영 여부와 시점은 각 저장소의 별도 작업에서 정한다.
+이 표준은 두 저장소의 코드를 바꾸지 않는다. 아래 수는 부록 D에서 채택한 결정(D1(c) D2(c) D3(a) D4(a) D5(a) D6(a) D7(b) D9(a) D10(a))이 두 저장소에 미치는 영향의 추정치이며, 이름이 바뀌는 선언의 대략 개수다. 반영 여부와 시점은 각 저장소의 별도 작업에서 정한다.
 
 | 저장소 | 규칙 | 바뀌는 이름(대략) | 위치 |
 | --- | --- | --- | --- |
