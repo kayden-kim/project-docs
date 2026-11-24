@@ -1,0 +1,4 @@
+interface:
+  display_name: "Anti-AI-Slop"
+  short_description: "AI가 만든 티가 나는 시각 패턴과 홍보성 문구를 걸러 실제 제품다운 UI로 설계·검토"
+  default_prompt: "$anti-ai-slop 이 화면의 시각 디자인, UI 문구, 정보 구조를 검토하고 흔한 AI 생성 패턴을 제품에 맞게 고쳐 줘."

@@ -1,0 +1,4 @@
+interface:
+  display_name: "Review UX Copy"
+  short_description: "앱 전체 UI 문구를 점검해 불필요하거나 AI가 쓴 듯한 문구를 지우고 고쳐 소스에 반영"
+  default_prompt: "$review-ux-copy 이 애플리케이션에서 사용자에게 보이는 문구를 모두 점검하고, 불필요하거나 AI가 쓴 듯한 문구를 지우거나 고쳐 소스 파일에 반영해 줘."

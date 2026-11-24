@@ -104,6 +104,8 @@ AGENTS.md 「2. 구현 전 계획」에 따라 PRD·용어집·스펙·도메인
 | [frontend-workflow](.agents/skills/frontend-workflow/SKILL.md) | 프로젝트 기준에 따른 프런트엔드 디자인 탐색·구현·검토 |
 | [artifact-design](.agents/skills/artifact-design/SKILL.md) | 글과 시각 자료를 연결하는 단일 HTML 아티팩트 설계·제작 |
 | [explain](.agents/skills/explain/SKILL.md) | 결과의 개요부터 설계 이유와 실제 코드 흐름까지 설명 |
+| [anti-ai-slop](.agents/skills/anti-ai-slop/SKILL.md) | 흔한 AI 생성 시각 패턴과 홍보성 문구를 피한 제품 UI의 설계·문구·검토 |
+| [review-ux-copy](.agents/skills/review-ux-copy/SKILL.md) | 앱 전체 UI 문구 점검과 불필요·홍보성 문구의 삭제·수정 |
 
 사용 예:
 
